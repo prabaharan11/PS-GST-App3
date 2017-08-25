@@ -1,0 +1,38 @@
+<form class="ui large form segment">
+ <marquee><h3 class="ui header">MY NEW BLOG</h3></marquee>
+<h3 class="ui header" align="center">Create a Post</h3>
+
+ <div class="field" align="center">
+ <label for="title">Post       :    </label>
+ <input name="title" #newtitle>
+<br>
+<br>
+<br>
+ </div>
+ <div class="field" align="center">
+ <label for="link">Author Name:</label>
+ <input name="link" #newlink>
+<br>
+<br>
+<br>
+ </div>
+<button (click)="addArticle(newtitle,newlink)" 
+ class="ui positive right floated button" align="center">
+ CREATE POST
+ </button>
+<br>
+<br>
+<br>
+<hr>
+<div class="ui grid posts">
+ <app-article>
+ </app-article>
+ </div>
+<br>
+<br>
+<br>
+<div class="ui grid posts">
+ <app-article>
+ </app-article>
+ </div>
+ </form>
